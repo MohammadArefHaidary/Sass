@@ -1,0 +1,10 @@
+body {
+    line-height: 1.4rem;
+    font-family: $font-family;
+}
+
+.container {
+    max-width: $width-large;
+    margin: auto;
+    padding: 3rem;
+}
