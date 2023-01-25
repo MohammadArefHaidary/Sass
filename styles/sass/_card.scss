@@ -6,7 +6,7 @@
 }
 
 .card {
-    display: flex;
+    @include flex;
     flex-direction: column;
     background-color:$white-color;
     border: $card-border-width solid $card-border-color;
@@ -14,7 +14,7 @@
 
     .card-header {
         @extend %share-style;
-        border-bottom:$card-border-width solid $card-border-color;
+        @include border('bottom',$card-border-width solid $card-border-color)
     }
 
     .card-body {
@@ -29,7 +29,8 @@
 
     .card-footer {
         @extend %share-style;
-        border-top:$card-border-width solid $card-border-color;
+        @include border('top',$card-border-width solid $card-border-color)
+
 
     }
 }
