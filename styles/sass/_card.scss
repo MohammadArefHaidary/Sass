@@ -12,6 +12,14 @@
     border: $card-border-width solid $card-border-color;
     border-radius: $card-border-raduis;
 
+
+
+    @include MediaQuery($sm) {
+        flex-direction: row;
+    }
+    @include MediaQuery($lg) {
+        flex-direction: column;
+    }
     .card-header {
         @extend %share-style;
         @include border('bottom',$card-border-width solid $card-border-color)

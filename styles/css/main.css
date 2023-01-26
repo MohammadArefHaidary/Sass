@@ -78,6 +78,16 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
+@media only screen and (min-width: 580px) {
+  .card {
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .card {
+    flex-direction: column;
+  }
+}
 .card .card-header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }

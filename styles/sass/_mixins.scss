@@ -14,3 +14,10 @@
 @mixin border($side,$value) {
     border-#{$side}: $value;
 }
+
+@mixin MediaQuery($screen) {
+
+    @media only screen and (min-width : $screen) {
+        @content;
+    }
+}
